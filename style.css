@@ -1,0 +1,295 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2196F3;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Cybercrime Awareness Section */
+.section-container {
+    background-color: #55AFF6;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.section-heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.section-subheading {
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.get-tips-button {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+/* Different Types of Cybercrimes Section */
+#cybercrimes {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#cybercrimes h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#cybercrimes p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cybercrime-types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cybercrime-item {
+    background-color: #1e2a38;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.cybercrime-item:hover {
+    transform: translateY(-10px);
+}
+
+.cybercrime-item img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.cybercrime-item h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Existing Section: Buttons with Icons */
+#icon-buttons {
+    background-color: #222;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.button {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #2294f2;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* New Section: Buttons with Icons */
+#new-icon-buttons {
+    background-color: #222;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#new-icon-buttons .button {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #2294f2;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+#new-icon-buttons .icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* FAQ Section */
+#faq {
+    background-color: #010f1a; /* Dark background for the FAQ section */
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#faq h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    line-height: 65px;
+    color: #ffffff;
+}
+
+#faq p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#faq h3 {
+    font-style: normal;
+    margin-bottom: 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    color: #ffffff;
+}
+
+.faq-item {
+    background-color: #ffffff; /* White background for FAQ items */
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item button {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.plus-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.faq-question {
+    color: #010f1a; /* Dark color for FAQ questions */
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #ffffff; /* Light color for FAQ answers */
+    background-color: #333; /* Dark background for FAQ answers */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cybercrime-item {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .cybercrime-item {
+        width: calc(100% - 40px);
+    }
+
+    /* Ensure new buttons fit well on smaller screens */
+    #new-icon-buttons .button {
+        width: 120px;
+        height: 80px;
+    }
+}
+
+/* Hide all law content sections by default */
+.law-content {
+    display: none;
+    background-color: #f4f4f4; /* Light grey background color for the law content */
+    padding: 20px; /* Padding around the content */
+    margin: 20px 0; /* Space above and below each content section */
+    border-radius: 8px; /* Rounded corners for the content section */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for a 3D effect */
+}
+
+/* Display the selected law content section when it is active */
+.law-content.active {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
