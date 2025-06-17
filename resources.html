@@ -1,106 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybercrime Resources</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        h2, h3 {
-            color: #2c3e50;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .section ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .section li {
-            margin: 10px 0;
-        }
-        .link {
-            color: #3498db;
-            text-decoration: none;
-        }
-        .link:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cybercrime Resources</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #0a58ca;
+}
+
+    html {
+      scroll-behavior: smooth;
+    }
+    .section-card {
+      background-color: #fff;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      padding: 2rem;
+      margin-bottom: 3rem;
+    }
+    .nav-link:hover,
+    .nav-link.active {
+      background-color: #e7f1ff;
+      border-radius: 0.5rem;
+    }
+    ul li {
+      margin-bottom: 0.75rem;
+    }
+  </style>
 </head>
-<body>
+<body class="bg-light">
 
-<div class="container">
-    <h2>Resources for Cybercrime Awareness</h2>
-    <p>This page provides essential resources to help you report cybercrimes and protect your online presence. Explore the links below to stay informed and safe.</p>
-
-    <!-- Reporting Portals and Helplines -->
-    <div class="section">
-        <h3>Reporting Portals and Helplines</h3>
-        <ul>
-            <li>
-                <strong>Cybercrime Reporting Portal:</strong> 
-                <a href="https://cybercrime.gov.in/" class="link" target="_blank">cybercrime.gov.in</a> – Official portal for reporting cybercrimes in India, including financial fraud, hacking, and data theft.
-            </li>
-            <li>
-                <strong>Ministry of Electronics and Information Technology (MeitY):</strong> 
-                <a href="https://www.meity.gov.in/" class="link" target="_blank">meity.gov.in</a> – Provides guidelines and updates on cybersecurity policies and initiatives.
-            </li>
-            <li>
-                <strong>Indian Computer Emergency Response Team (CERT-In):</strong> 
-                <a href="https://www.cert-in.org.in/" class="link" target="_blank">cert-in.org.in</a> – National agency for addressing cybersecurity incidents and promoting cyber resilience.
-            </li>
-           
-            <li>
-                <strong>Anti-Fraud Helpline (1930):</strong> Call the anti-fraud helpline number 1930 to report scams, phishing, and fraudulent transactions.
-            </li>
-        </ul>
+  <!-- Header -->
+  <header class="bg-primary text-white py-5">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold">Cybercrime Resources</h1>
+      <p class="lead mt-2">Your guide to recognizing, reporting, and recovering from cybercrime in 2025.</p>
     </div>
+  </header>
 
-    <!-- Cyber Hygiene Tools -->
-    <div class="section">
-        <h3>Cyber Hygiene Tools</h3>
-        <ul>
-            <li>
-                <strong>Antivirus Software:</strong> Protect your devices with trusted antivirus software:
-                <a href="https://www.avast.com/" class="link" target="_blank">Avast</a>, 
-                <a href="https://in.norton.com/" class="link" target="_blank">Norton</a>, 
-                <a href="https://www.kaspersky.com/" class="link" target="_blank">Kaspersky</a>.
-            </li>
-            <li>
-                <strong>Password Managers:</strong> Safely store and manage passwords with:
-                <a href="https://www.lastpass.com/" class="link" target="_blank">LastPass</a>, 
-                <a href="https://bitwarden.com/" class="link" target="_blank">Bitwarden</a>, 
-                <a href="https://1password.com/" class="link" target="_blank">1Password</a>.
-            </li>
-            <li>
-                <strong>VPN Services:</strong> Enhance your privacy using VPNs like:
-                <a href="https://nordvpn.com/" class="link" target="_blank">NordVPN</a>, 
-                <a href="https://www.expressvpn.com/" class="link" target="_blank">ExpressVPN</a>, 
-                <a href="https://protonvpn.com/" class="link" target="_blank">ProtonVPN</a>.
-            </li>
-            <li>
-                <strong>Secure Browsers:</strong> Use privacy-focused browsers such as:
-                <a href="https://brave.com/" class="link" target="_blank">Brave</a> or 
-                <a href="https://www.mozilla.org/en-US/firefox/" class="link" target="_blank">Mozilla Firefox</a> for safer browsing.
-            </li>
-        </ul>
+  <!-- Navigation -->
+  <nav class="bg-white shadow-sm sticky-top py-3">
+    <div class="container d-flex justify-content-center gap-3 flex-wrap">
+      <a class="nav-link text-primary fw-semibold" href="#report">Report Cybercrime</a>
+      <a class="nav-link text-primary fw-semibold" href="#prevent">Prevention Tips</a>
+      <a class="nav-link text-primary fw-semibold" href="#resources">Educational Resources</a>
+      <a class="nav-link text-primary fw-semibold" href="#tools">Tools & Platforms</a>
     </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+
+    <!-- Report Cybercrime -->
+    <section id="report" class="section-card">
+      <h2 class="h4 fw-bold mb-3">Report Cybercrime</h2>
+      <p>If you’ve been a victim of cybercrime, report it to the appropriate authorities as soon as possible:</p>
+      <ul>
+        <li><a href="https://www.ic3.gov" target="_blank">IC3 - FBI</a></li>
+        <li><a href="https://www.cybercrime.gov.in" target="_blank">Cyber Crime Portal - India</a></li>
+        <li><a href="https://www.cyber.gov.au/report" target="_blank">Australian Cyber Security Centre</a></li>
+        <li><a href="https://www.europol.europa.eu/" target="_blank">Europol EC3</a></li>
+        <li><a href="https://www.cisa.gov/report" target="_blank">CISA - Report Incidents</a></li>
+        <li><a href="https://www.interpol.int/Crimes/Cybercrime" target="_blank">INTERPOL Cybercrime</a></li>
+        <li><a href="https://www.actionfraud.police.uk" target="_blank">Action Fraud - UK</a></li>
+      </ul>
+    </section>
+
+    <!-- Prevention Tips -->
+    <section id="prevent" class="section-card">
+      <h2 class="h4 fw-bold mb-3">Prevention Tips</h2>
+      <p>Protect yourself from cybercrime with these practical steps:</p>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="bg-light p-4 rounded">
+            <h5 class="fw-semibold">Secure Your Accounts</h5>
+            <p>Use strong passwords and enable 2FA wherever possible.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="bg-light p-4 rounded">
+            <h5 class="fw-semibold">Avoid Suspicious Links</h5>
+            <p>Don’t click on suspicious links or attachments.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="bg-light p-4 rounded">
+            <h5 class="fw-semibold">Update Software</h5>
+            <p>Keep your OS, apps, and antivirus software up to date.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="bg-light p-4 rounded">
+            <h5 class="fw-semibold">Adopt Zero Trust</h5>
+            <p>Use a Zero Trust model. <a href="https://www.nist.gov/publications/zero-trust-architecture" target="_blank">Learn more</a>.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="bg-light p-4 rounded">
+            <h5 class="fw-semibold">Secure Web Applications</h5>
+            <p>Follow OWASP standards. <a href="https://owasp.org/www-project-top-ten/" target="_blank">OWASP Top Ten</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Educational Resources -->
+    <section id="resources" class="section-card">
+      <h2 class="h4 fw-bold mb-3">Educational Resources</h2>
+      <p>Learn more about cybercrime and cybersecurity through these trusted platforms:</p>
+      <ul>
+        <li><a href="https://www.cisa.gov/free-cybersecurity-services-and-tools" target="_blank">CISA Free Cybersecurity Tools</a></li>
+        <li><a href="https://www.fightcybercrime.org" target="_blank">FightCybercrime.org</a></li>
+        <li><a href="https://www.kaspersky.com/resource-center/threats/cybercrime" target="_blank">Kaspersky Cybercrime Prevention</a></li>
+        <li><a href="https://www.kelacyber.com/state-of-cybercrime-2025" target="_blank">KELA State of Cybercrime 2025</a></li>
+        <li><a href="https://news.sophos.com/en-us/2025/04/16/the-sophos-annual-threat-report-cybercrime-on-main-street-2025/" target="_blank">Sophos Annual Report 2025</a></li>
+        <li><a href="https://cybersecurityventures.com/annual-cybercrime-report-2020/" target="_blank">Cybersecurity Ventures</a></li>
+        <li><a href="https://cybercrime.org.za" target="_blank">Cybercrime.org.za</a></li>
+        <li><a href="https://www.cyberdegrees.org/resources/cybersecurity-websites/" target="_blank">CyberDegrees.org</a></li>
+      </ul>
+    </section>
+
+    <!-- Tools & Platforms -->
+    <section id="tools" class="section-card">
+      <h2 class="h4 fw-bold mb-3">Tools & Platforms</h2>
+      <p>Explore free tools for cybersecurity and threat intelligence:</p>
+      <ul>
+        <li><a href="https://pulsedive.com/" target="_blank">Pulsedive</a></li>
+        <li><a href="https://www.opencti.io/" target="_blank">OpenCTI</a></li>
+        <li><a href="https://attack.mitre.org/" target="_blank">MITRE ATT&CK Framework</a></li>
+      </ul>
+
+      <!-- Cyber Hygiene Tools Subsection -->
+<div class="mt-4">
+  <h3 class="h5 fw-bold mb-3">Cyber Hygiene Tools</h3>
+
+  <div class="mb-4">
+    <strong>Antivirus Software:</strong>
+    <p>Antivirus software helps detect, block, and remove malware such as viruses, spyware, and ransomware. It is essential for protecting your data and devices.</p>
+    <ul class="mb-2">
+      <li><a href="https://www.avast.com/" target="_blank">Avast</a> – Free and premium antivirus for home and business use.</li>
+      <li><a href="https://in.norton.com/" target="_blank">Norton</a> – Comprehensive protection with identity theft and VPN services.</li>
+      <li><a href="https://www.kaspersky.com/" target="_blank">Kaspersky</a> – Known for powerful malware detection and web protection.</li>
+    </ul>
+  </div>
+
+  <div class="mb-4">
+    <strong>Password Managers:</strong>
+    <p>Password managers securely store and generate strong passwords for all your online accounts, reducing the risk of hacks and reuse of weak credentials.</p>
+    <ul class="mb-2">
+      <li><a href="https://www.lastpass.com/" target="_blank">LastPass</a> – Cloud-based password manager with autofill and vault features.</li>
+      <li><a href="https://bitwarden.com/" target="_blank">Bitwarden</a> – Open-source password manager with strong encryption.</li>
+      <li><a href="https://1password.com/" target="_blank">1Password</a> – Easy-to-use password vault for individuals and teams.</li>
+    </ul>
+  </div>
+
+  <div class="mb-4">
+    <strong>VPN Services:</strong>
+    <p>Virtual Private Networks (VPNs) encrypt your internet traffic and mask your IP address, enhancing privacy and enabling safe browsing even on public Wi-Fi.</p>
+    <ul class="mb-2">
+      <li><a href="https://nordvpn.com/" target="_blank">NordVPN</a> – Secure, fast, and user-friendly VPN service.</li>
+      <li><a href="https://www.expressvpn.com/" target="_blank">ExpressVPN</a> – High-speed VPN with strong privacy protections.</li>
+      <li><a href="https://protonvpn.com/" target="_blank">ProtonVPN</a> – Swiss-based VPN focused on security and freedom.</li>
+    </ul>
+  </div>
+
+  <div class="mb-4">
+    <strong>Secure Browsers:</strong>
+    <p>Secure browsers provide enhanced privacy settings, block trackers, and protect against phishing. They are essential for safe and anonymous browsing.</p>
+    <ul class="mb-2">
+      <li><a href="https://brave.com/" target="_blank">Brave</a> – Blocks ads and trackers by default, focused on privacy.</li>
+      <li><a href="https://www.mozilla.org/en-US/firefox/" target="_blank">Mozilla Firefox</a> – Open-source browser with customizable privacy controls.</li>
+    </ul>
+  </div>
 </div>
 
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 text-center">
+    <p class="mb-0">© 2025 Cybercrime Resources.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
